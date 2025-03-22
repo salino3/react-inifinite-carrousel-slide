@@ -1,11 +1,12 @@
 import React from "react";
+import { DataCarrousel } from "../../data";
 import "./card.styles.scss";
 
-export const Card: React.FC = () => {
+export const Card: React.FC<{ props: DataCarrousel }> = ({ props }) => {
   return (
     <div className="card">
-      <img src="assets/photo-1.png" alt="Photo 1" />
-      <strong>Cat</strong>
+      <img src={`assets/${props?.img}`} alt={"Photo " + props?.id} />
+      <strong>{props?.title}</strong>
     </div>
   );
 };
