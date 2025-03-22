@@ -7,19 +7,27 @@
   padding: 0.5rem;
 
   .containerCarrousel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     padding: 0.5rem;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     .carousel-wrapper {
-      overflow: hidden;
       width: 100%;
+      overflow: hidden; // Mantén esto para ocultar los slides fuera de la vista
+      max-width: 80vw; // O un ancho fijo, como 900px
+
+      .slick-list {
+        // width: 900px !important; /* Ajusta el ancho según tus necesidades */
+      }
+
       .slick-slide {
         display: flex !important;
         justify-content: center;
+        width: 300px !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
     }
   }

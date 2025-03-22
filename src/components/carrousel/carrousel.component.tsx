@@ -2,10 +2,10 @@ import { useRef } from "react";
 import { Card } from "../card";
 import Slider from "react-slick";
 import { dataCarrousel, DataCarrousel } from "../../data";
-import "./carrousel.styles.scss";
 // It can go in App.tsx file
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./carrousel.styles.scss";
 
 export const Carrousel: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null);
