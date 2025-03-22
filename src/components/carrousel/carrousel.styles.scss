@@ -13,5 +13,14 @@
     align-items: center;
     gap: 1rem;
     padding: 0.5rem;
+
+    .carousel-wrapper {
+      overflow: hidden;
+      width: 100%;
+      .slick-slide {
+        display: flex !important;
+        justify-content: center;
+      }
+    }
   }
 }
