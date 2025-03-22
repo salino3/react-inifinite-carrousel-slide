@@ -1,10 +1,11 @@
 import "./App.scss";
+import { Carrousel } from "./components";
 
 function App() {
   return (
     <div className="rootApp">
-      <h1>react-inifinite-carrousel-slide</h1>
-      <img src="assets/photo-1.png" alt="Photo 1" />
+      <h1>React Inifinite Carrousel Slide</h1>
+      <Carrousel />
     </div>
   );
 }
