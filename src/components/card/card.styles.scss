@@ -4,5 +4,13 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  border: solid 1px;
+  border-radius: 1rem;
+
+  img {
+    border-radius: 1rem;
+    width: 300px;
+    height: auto;
+  }
 }

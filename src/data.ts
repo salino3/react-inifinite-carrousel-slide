@@ -8,12 +8,12 @@ export const dataCarrousel: DataCarrousel[] = [
   {
     id: 1,
     title: "Cat",
-    img: "photo-1.png",
+    img: "photo-1.jpg",
   },
   {
     id: 2,
-    title: "Cat",
-    img: "photo-2.png",
+    title: "Dog",
+    img: "photo-2.jpg",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const dataCarrousel: DataCarrousel[] = [
   },
   {
     id: 4,
-    title: "Cat",
-    img: "photo-4.png",
+    title: "Dog",
+    img: "photo-4.jpg",
   },
 ];
