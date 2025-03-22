@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Card } from "../card";
 import Slider from "react-slick";
+import { useResizeObserver } from "../../hooks/use-resize-observer";
 import { dataCarrousel, DataCarrousel } from "../../data";
 // It can go in App.tsx file
 import "slick-carousel/slick/slick.css";
@@ -10,28 +11,35 @@ import "./carrousel.styles.scss";
 export const Carrousel: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null);
 
+  const [divRef, dimensions] = useResizeObserver<HTMLDivElement>();
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    swipe: false, // Disables touch swipe
+    draggable: false, // Disables mouse drag
+    touchMove: false, // Prevents touch movement on mobile devices
+    arrows: false, // Hides the default slick 'Slide' arrows
+    //* It does not work
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
   };
 
   return (
