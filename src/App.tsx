@@ -1,5 +1,5 @@
-import "./App.scss";
 import { Carrousel } from "./components";
+import "./App.scss";
 
 function App() {
   return (

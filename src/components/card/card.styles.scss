@@ -7,13 +7,12 @@
   padding: 1rem;
   border: solid 1px;
   border-radius: 1rem;
-  //   width: 100%;
   margin: auto;
 
   img {
     border-radius: 1rem;
-    min-width: 300px;
-    width: 300px;
+    min-width: 250px;
+    max-width: 250px;
     height: auto;
   }
 }
